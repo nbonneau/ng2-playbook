@@ -1,0 +1,10 @@
+<ul class="playbook-menu-list">
+  <li class="playbook-menu-list-item" (click)="onClickItem(i)" *ngFor="let item of items; let i = index">
+    {{item.title}}
+    <ul *ngIf="item.subcomponents">
+      <li class="" (click)="onClickItem(i, y)" *ngFor="let item of item.subcomponents; let y = index">
+        {{item.title}}
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,11 @@
+<div>
+    <b>Inputs</b>
+    <p>{{formatInputs(inputs)}}</p>
+    <hr>
+    <b>Outputs</b>
+    <ul>
+      <li *ngFor="let event of outputs">
+          {{event.property}}: {{event.type}}
+      </li>
+    </ul>
+</div>
