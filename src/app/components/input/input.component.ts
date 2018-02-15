@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class InputComponent {
 
-  @Input() placeholder: string;
+  @Input() placeholder: string = '';
 
   @Output() onFocus: EventEmitter<any> = new EventEmitter();
 

@@ -1,0 +1,20 @@
+<div>
+    <div class="storybook-menu">
+        <h1>Ng2 Storybook</h1>
+        <!-- Storybook menu -->
+        <ng2-storybook-menu [items]="items" (clickItem)="loadComponent($event.parentIndex, $event.index)"></ng2-storybook-menu>
+        <p class="text-center">
+            Version 1.0.0
+        </p>
+    </div>
+    <div class="storybook-host">
+        <!-- Component view -->
+        <ng-template storybook-host></ng-template>
+
+    </div>
+
+    <!-- Component infos -->
+    <div class="storybook-infos">
+        <ng2-storybook-infos [inputs]="currentItem.inputs" [outputs]="currentItemEvents"></ng2-storybook-infos>
+    </div>
+</div>

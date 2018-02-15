@@ -1,0 +1,34 @@
+.storybook-infos {
+    height: 150px;
+}
+
+.storybook-infos-elm {
+    display: none;
+    padding: 5px;
+    overflow: auto;
+    height: 120px;
+}
+
+.storybook-infos-elm.active {
+    display: block;
+}
+
+.storybook-infos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+
+.storybook-infos-list-item {
+    padding: 5px 10px;
+    display: inline;
+}
+
+.storybook-infos-list-item.active {
+    background: black;
+    color: white;
+}
+
+.storybook-infos-list-item:hover {
+    cursor: pointer;
+}

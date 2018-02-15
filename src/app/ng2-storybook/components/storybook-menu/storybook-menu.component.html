@@ -1,0 +1,10 @@
+<ul class="storybook-menu-list">
+    <li [ngClass]="{'active': item.open}" class="storybook-menu-list-item" (click)="onClickItem(i)" *ngFor="let item of items; let i = index">
+        <span class="storybook-menu-list-item-title" (click)="onItemClick(item)">{{item.title}}</span>
+        <ul [ngClass]="{'open': item.open, 'hide': !item.open}" class="storybook-menu-list" *ngIf="item.subcomponents">
+            <li class="storybook-menu-list-item" [ngClass]="{'active': item.open}" (click)="onClickItem(i, y)" *ngFor="let item of item.subcomponents; let y = index">
+                <span class="storybook-menu-list-item-title" (click)="onItemClick(item)">{{item.title}}</span>
+            </li>
+        </ul>
+    </li>
+</ul>

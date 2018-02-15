@@ -1,0 +1,16 @@
+<div class="storybook-infos">
+    <ul class="storybook-infos-list">
+        <li [class.active]="inputsElm.active" class="storybook-infos-list-item" #inputsElm (click)="outputsElm.active = false; inputsElm.active = true;">Inputs</li>
+        <li [class.active]="outputsElm.active" class="storybook-infos-list-item" #outputsElm (click)="outputsElm.active = true; inputsElm.active = false;">Outputs</li>
+    </ul>
+    <div [class.active]="inputsElm.active" class="storybook-infos-elm">
+        <p>{{formatInputs(inputs)}}</p>
+    </div>
+    <div [class.active]="outputsElm.active" class="storybook-infos-elm">
+        <ul>
+            <li *ngFor="let event of outputs">
+                {{event.property}}: {{event.type}}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,8 +1,8 @@
 import { Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({
-  selector: '[playbook-host]',
+  selector: '[storybook-host]',
 })
-export class PlaybookDirective {
+export class StorybookDirective {
   constructor(public viewContainerRef: ViewContainerRef) { }
 }

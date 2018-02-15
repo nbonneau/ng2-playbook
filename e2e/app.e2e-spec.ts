@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng2-playbook App', () => {
+describe('ng2-storybook App', () => {
   let page: AppPage;
 
   beforeEach(() => {
